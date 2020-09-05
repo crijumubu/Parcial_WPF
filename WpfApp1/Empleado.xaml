@@ -31,7 +31,7 @@
         <Label Content="Cédula" HorizontalAlignment="Left" Margin="61,138,0,0" VerticalAlignment="Top" FontSize="16"/>
         <TextBox Name="txtCedula" HorizontalAlignment="Left" Height="32" Margin="332,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBlock Name="txtVentas" HorizontalAlignment="Left" Height="302" Margin="539,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="215" FontSize="16" Background="White"/>
-        <Button Content="Confirmar" HorizontalAlignment="Left" Margin="264,363,0,0" VerticalAlignment="Top" Width="88" Height="36" BorderBrush="White" Background="White" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <Button Content="Confirmar" HorizontalAlignment="Left" Margin="264,363,0,0" VerticalAlignment="Top" Width="88" Height="36" BorderBrush="#FF707070" Background="White" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
 
     </Grid>
 </Page>

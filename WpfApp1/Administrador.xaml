@@ -15,9 +15,8 @@
                 <GradientStop Color="White" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Label Content="Total de las ventas" HorizontalAlignment="Left" Height="38" Margin="52,67,0,0" VerticalAlignment="Top" Width="145" FontSize="16"/>
-        <TextBox Name="txtVentas" HorizontalAlignment="Left" Height="32" Margin="216,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="155"/>
-        <TextBlock HorizontalAlignment="Left" Height="323" Margin="539,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="215" Background="White"/>
+        <Label Content="¡Bienvenido al perfil de administrador!" HorizontalAlignment="Left" Height="48" Margin="179,178,0,0" VerticalAlignment="Top" Width="449" FontSize="24" FontWeight="Bold" FontStyle="Italic"/>
+        
 
     </Grid>
 </Page>
