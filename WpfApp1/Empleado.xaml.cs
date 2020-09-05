@@ -16,18 +16,16 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
+    /// Lógica de interacción para Empleado.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Empleado : Page
     {
-        public MainWindow()
+        public string[] Panes { get; set; }
+        public Empleado()
         {
             InitializeComponent();
-        }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            frameMain.NavigationService.Navigate(new Login());
+            Panes = new string[] { "Especial", "Alineado", "No alineado"};
+            DataContext = this;
         }
     }
 }

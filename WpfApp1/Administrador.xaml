@@ -1,0 +1,23 @@
+﻿<Page x:Class="WpfApp1.Administrador"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Administrador">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF3749BF" Offset="0"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Total de las ventas" HorizontalAlignment="Left" Height="38" Margin="52,67,0,0" VerticalAlignment="Top" Width="145" FontSize="16"/>
+        <TextBox Name="txtVentas" HorizontalAlignment="Left" Height="32" Margin="216,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="155"/>
+        <TextBlock HorizontalAlignment="Left" Height="323" Margin="539,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="215" Background="White"/>
+
+    </Grid>
+</Page>
