@@ -24,5 +24,26 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void btnConsultar_Click(object sender, RoutedEventArgs e)
+        {
+            string year = clnConsultar.DisplayDate.Year.ToString();
+            string month = clnConsultar.DisplayDate.Month.ToString();
+            string day = clnConsultar.DisplayDate.Day.ToString();
+            string time = DateTime.Now.ToLongTimeString();
+            txtResultado.Text += "Ingresos" + txtIngresos.Text + "\n" + "Egresos" + txtEgresos.Text + "\n" + "Fecha de consulta: " + year + "/" + month + "/" + day + " " + time;
+
+        }
+
+        private void btnAvanzado_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Esta funcionalidad no se encuentra disponible, estamos trabajando en ello, gracias");
+        }
+
+        private void btnSalir_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow w = (MainWindow)Window.GetWindow(this);
+            w.frameMain.NavigationService.Navigate(new Login());
+        }
     }
 }

@@ -5,8 +5,8 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WpfApp1"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="Administrador">
+      d:DesignHeight="500" d:DesignWidth="900"
+      Title="Administrador" Height="600">
 
     <Grid>
         <Grid.Background>
@@ -15,8 +15,17 @@
                 <GradientStop Color="White" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Label Content="¡Bienvenido al perfil de administrador!" HorizontalAlignment="Left" Height="48" Margin="179,178,0,0" VerticalAlignment="Top" Width="449" FontSize="24" FontWeight="Bold" FontStyle="Italic"/>
-        
+        <Label Content="¡Bienvenido al perfil de administrador!" HorizontalAlignment="Left" Height="48" Margin="225,10,0,0" VerticalAlignment="Top" Width="449" FontSize="24" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Name="lblIngresos" Content="Ingresa los ingresos semanales" HorizontalAlignment="Left" Margin="81,120,0,0" VerticalAlignment="Top" Height="38" Width="252" FontSize="16"/>
+        <TextBox Name="txtIngresos" HorizontalAlignment="Left" Height="32" Margin="387,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextAlignment="Center" FontSize="16"/>
+        <Label Name="lblEgresos" Content="Ingresa los egresos semanales" HorizontalAlignment="Left" Margin="81,189,0,0" VerticalAlignment="Top" Height="38" Width="252" FontSize="16"/>
+        <TextBox Name="txtEgresos" HorizontalAlignment="Left" Height="32" Margin="387,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextAlignment="Center" FontSize="16"/>
+        <Button Name="btnConsultar" Content="Consultar" HorizontalAlignment="Left" Margin="284,280,0,0" VerticalAlignment="Top" Width="90" FontSize="14" Height="36" Background="White" FontWeight="Bold" FontStyle="Italic" Click="btnConsultar_Click"/>
+        <Button Name="btnAvanzado" Content="Opciones avanzasdas" HorizontalAlignment="Left" Margin="255,335,0,0" VerticalAlignment="Top" Width="146" FontSize="14" Height="36" Background="White" FontWeight="Bold" FontStyle="Italic" Click="btnAvanzado_Click"/>
+        <TextBlock Name="txtResultado" HorizontalAlignment="Left" Height="302" Margin="578,87,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="215" Background="White"/>
+        <DatePicker Name="dtaConsultar" HorizontalAlignment="Left" Margin="401,443,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Calendar Name="clnConsultar"  HorizontalAlignment="Left" Margin="27,318,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Button Name="btnSalir" Content="Salir" HorizontalAlignment="Left" Margin="284,390,0,0" VerticalAlignment="Top" Width="90" FontSize="14" Height="36" Background="White" FontWeight="Bold" FontStyle="Italic" Click="btnSalir_Click"/>
 
     </Grid>
 </Page>

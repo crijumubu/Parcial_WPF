@@ -5,9 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+        Title="MainWindow" Height="600" Width="900" Loaded="Window_Loaded">
     <Grid>
-        <Frame Name="frameMain" Content="" Margin="0,48,0,-2" NavigationUIVisibility="Hidden"/>
-        <Label Content="Only Pans" HorizontalAlignment="Center" Height="54" Margin="307,-13,309,0" VerticalAlignment="Top" Width="176" FontSize="35" FontWeight="Bold" FontStyle="Italic"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="29*"/>
+            <ColumnDefinition Width="763*"/>
+        </Grid.ColumnDefinitions>
+        <Frame Name="frameMain" Content="" Margin="0,48,0,-2" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2"/>
+        <Label Content="Only Pans" HorizontalAlignment="Center" Height="58" Margin="342,-15,341,0" VerticalAlignment="Top" Width="176" FontSize="35" FontWeight="Bold" FontStyle="Italic" Grid.Column="1"/>
     </Grid>
 </Window>
